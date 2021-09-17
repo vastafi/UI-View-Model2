@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+    <Button
+        android:id="@+id/pushNotification"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/push_notifications"
+        />
+        <EditText
+            android:id="@+id/searchWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="true"
+            android:hint="@string/the_key_word"
+            android:inputType="text"
+            android:padding="10dp"
+            android:shadowColor="#009688"
+            android:textSize="25sp" />
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="78dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/backCamera"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:checked="true"
+            android:text="@string/backPhoto" />
+
+        <RadioButton
+            android:id="@+id/frontCamera"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:text="@string/frontPhoto" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerInParent="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="156dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/image" />
+
+    <Button
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_image"
+        android:layout_below="@+id/check"
+        android:layout_centerInParent="true"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/toggleButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UIViewModel</string>
+    <string name="push_notifications">Push notifications</string>
+    <string name="photo">Photo</string>
+    <string name="frontPhoto">Front</string>
+    <string name="backPhoto">Back</string>
+    <string name="get_image">Get image</string>
+    <string name="the_key_word">The key word</string>
+    <string name="search">Search</string>
+    <string name="todo">TODO</string>
+    <string name="time">Time</string>
+    <string name="foto">Foto</string>
+    <string name="image">Image</string>
+</resources>
